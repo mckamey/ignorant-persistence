@@ -40,8 +40,8 @@ namespace IgnorantPersistence.Memory
 		/// <summary>
 		/// Ctor
 		/// </summary>
-		/// <param name="source">initial items</param>
-		/// <param name="comparer">determines if two objects represent the same item</param>
+		/// <param name="comparer">initial items</param>
+		/// <param name="items">determines if two objects represent the same item</param>
 		public MemoryTable(IEqualityComparer<T> comparer, IEnumerable<T> items)
 		{
 			if (items == null)

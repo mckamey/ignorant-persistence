@@ -19,6 +19,9 @@ namespace IgnorantPersistence.Memory
 
 		#region IUnitOfWork Members
 
+		/// <summary>
+		/// Save any changes
+		/// </summary>
 		public void Save()
 		{
 			// "save" each table
@@ -35,6 +38,11 @@ namespace IgnorantPersistence.Memory
 			}
 		}
 
+		/// <summary>
+		/// Gets an in-memory instance of an ITable
+		/// </summary>
+		/// <typeparam name="T"></typeparam>
+		/// <returns></returns>
 		public ITable<T> GetTable<T>() where T : class
 		{
 			ITable<T> table =
@@ -74,11 +82,22 @@ namespace IgnorantPersistence.Memory
 
 		#region Test Methods
 
+		/// <summary>
+		/// Sets equality comparer for a given type
+		/// </summary>
+		/// <typeparam name="T"></typeparam>
+		/// <param name="items"></param>
 		public void PopulateTable<T>(IEnumerable<T> items)
 		{
 			this.PopulateTable(EqualityComparer<T>.Default, items);
 		}
 
+		/// <summary>
+		/// Sets the equality comparer and initial values for a given type
+		/// </summary>
+		/// <typeparam name="T"></typeparam>
+		/// <param name="comparer"></param>
+		/// <param name="items"></param>
 		public void PopulateTable<T>(IEqualityComparer<T> comparer, IEnumerable<T> items)
 		{
 			this.Comparers[typeof(T)] = comparer;

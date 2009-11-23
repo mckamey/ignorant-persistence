@@ -21,7 +21,7 @@ namespace IgnorantPersistence
 		/// <summary>
 		/// Ctor
 		/// </summary>
-		/// <param name="factories">must be of type Func&lt;string, T&gt;</param>
+		/// <param name="factoryMethods">must be of type Func&lt;string, T&gt;</param>
 		public SimpleServiceLocator(params Delegate[] factoryMethods)
 		{
 			if (factoryMethods == null)
@@ -63,11 +63,25 @@ namespace IgnorantPersistence
 
 		#region ServiceLocatorImplBase Members
 
+		/// <summary>
+		/// Gets all instances of a given type
+		/// </summary>
+		/// <param name="serviceType"></param>
+		/// <returns></returns>
+		/// <remarks>
+		/// Note this simplified ServiceLocator only supports one factory method per type
+		/// </remarks>
 		protected override IEnumerable<object> DoGetAllInstances(Type serviceType)
 		{
 			yield return this.GetInstance(serviceType);
 		}
 
+		/// <summary>
+		/// Gets an instance of the specified type
+		/// </summary>
+		/// <param name="serviceType"></param>
+		/// <param name="key"></param>
+		/// <returns></returns>
 		protected override object DoGetInstance(Type serviceType, string key)
 		{
 			if (!this.FactoryMethods.ContainsKey(serviceType))

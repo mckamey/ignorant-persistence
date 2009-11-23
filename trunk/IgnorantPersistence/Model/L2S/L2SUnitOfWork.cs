@@ -29,11 +29,18 @@ namespace IgnorantPersistence.L2S
 
 		#region Methods
 
+		/// <summary>
+		/// Checks if the configured database exists at the location specified in the connection string.
+		/// </summary>
+		/// <returns></returns>
 		public bool CanConnect()
 		{
 			return this.DB.DatabaseExists();
 		}
 
+		/// <summary>
+		/// Creates a database at the location specified in the connection string.
+		/// </summary>
 		public void InitializeDatabase()
 		{
 			this.DB.CreateDatabase();
@@ -43,12 +50,18 @@ namespace IgnorantPersistence.L2S
 
 		#region Events
 
+		/// <summary>
+		/// A callback which notifies any listeners of pending changes
+		/// </summary>
 		public event Action<L2SUnitOfWork, ChangeSet> OnCommit;
 
 		#endregion Events
 
 		#region IUnitOfWork Members
 
+		/// <summary>
+		/// Stores any pending changes
+		/// </summary>
 		public void Save()
 		{
 			if (this.OnCommit != null)
