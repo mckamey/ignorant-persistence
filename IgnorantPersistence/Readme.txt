@@ -40,12 +40,10 @@ public class FooRepository
 
 }}}
 
-And usage of the repository is powerful being able to leverage LINQ ignorant of the underlying storage:
+And usage of the repository is powerful being able to leverage LINQ ignorant of the underlying storage. Repository gets a reference to the unit of work via dependency injection which is populated any inverson of control (IoC) container you like.
 
 {{{
 
-// repository gets the unit of work via dependency injection
-// use any inverson of control (IoC) container you like to populate
 FooRepository repos = ServiceLocator.Current.GetInstance<FooRepository>();
 
 var query =
