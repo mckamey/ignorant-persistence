@@ -3,8 +3,11 @@ using System.Collections.Generic;
 using System.Reflection;
 using Microsoft.Practices.ServiceLocation;
 
-namespace Shadow.Model
+namespace IgnorantPersistence
 {
+	/// <summary>
+	/// A simple ServiceLocator implementation
+	/// </summary>
 	public class SimpleServiceLocator : ServiceLocatorImplBase
 	{
 		#region Fields

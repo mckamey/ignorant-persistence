@@ -3,8 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 
-namespace Shadow.Model
+namespace IgnorantPersistence
 {
+	/// <summary>
+	/// A queryable interface to the underlying storage
+	/// </summary>
+	/// <typeparam name="T"></typeparam>
 	public interface ITable<T> :
 		IQueryable<T>,
 		IEnumerable<T>

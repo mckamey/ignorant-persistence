@@ -3,17 +3,8 @@ using System.Data.Linq;
 using System.Linq;
 using System.Linq.Expressions;
 
-namespace Shadow.Model.L2S
+namespace IgnorantPersistence.L2S
 {
-	public interface ISoftDeleteEntity
-	{
-		DateTime? DeletedDate { get; set; }
-
-		string Signature { get; }
-
-		void CopyValuesFrom(object item);
-	}
-
 	/// <summary>
 	/// A table which doesn't actually delete but instead flags as deleted
 	/// </summary>
