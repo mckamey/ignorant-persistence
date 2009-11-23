@@ -10,6 +10,7 @@ IF NOT EXIST %AutoVer% (
 )
 
 %AutoVer% "%SolnDir%Model\Properties\AssemblyVersion.cs" %BaseVersion%
+%AutoVer% "%SolnDir%SimpleServiceLocator\Properties\AssemblyVersion.cs" %BaseVersion%
 
 :Done
 PAUSE
