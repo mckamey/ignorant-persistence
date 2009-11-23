@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual Studio 2008
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IgnorantPersistence", "Model\IgnorantPersistence.csproj", "{889B2373-7928-431C-AA55-DCCD05A5E0AF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleServiceLocator", "SimpleServiceLocator\SimpleServiceLocator.csproj", "{511A8FE6-ED39-4530-B44C-480036C5F54B}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,10 +13,6 @@ Global
 		{889B2373-7928-431C-AA55-DCCD05A5E0AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{889B2373-7928-431C-AA55-DCCD05A5E0AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{889B2373-7928-431C-AA55-DCCD05A5E0AF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{511A8FE6-ED39-4530-B44C-480036C5F54B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{511A8FE6-ED39-4530-B44C-480036C5F54B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{511A8FE6-ED39-4530-B44C-480036C5F54B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{511A8FE6-ED39-4530-B44C-480036C5F54B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
