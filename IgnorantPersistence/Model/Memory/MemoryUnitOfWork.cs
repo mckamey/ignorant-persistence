@@ -2,8 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Shadow.Model.Memory
+namespace IgnorantPersistence.Memory
 {
+	/// <summary>
+	/// An in-memory implementation of a unit-of-work
+	/// </summary>
 	public class MemoryUnitOfWork : IUnitOfWork
 	{
 		#region Fields

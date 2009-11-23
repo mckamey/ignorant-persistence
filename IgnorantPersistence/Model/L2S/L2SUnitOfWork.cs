@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Data.Linq;
 
-namespace Shadow.Model.L2S
+namespace IgnorantPersistence.L2S
 {
 	/// <summary>
 	/// A unit-of-work adapter for LINQ-to-SQL DataContexts.

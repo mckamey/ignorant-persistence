@@ -5,7 +5,7 @@ using System.Data.Linq;
 using System.Linq;
 using System.Linq.Expressions;
 
-namespace Shadow.Model.L2S
+namespace IgnorantPersistence.L2S
 {
 	/// <summary>
 	/// A queryable table adapter for LINQ-to-SQL tables.
