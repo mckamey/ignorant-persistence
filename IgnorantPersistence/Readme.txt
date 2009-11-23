@@ -40,7 +40,9 @@ public class FooRepository
 
 }}}
 
-And usage of the repository is powerful being able to leverage LINQ ignorant of the underlying storage. Repository gets a reference to the unit of work via dependency injection which is populated any inverson of control (IoC) container you like.
+The repository gets a reference to the unit of work via dependency injection (DI) which is populated via any inverson of control (IoC) container you like.
+
+And since `ITable<T>` implements `IQueryable<T>`, the usage of the repository is powerful being able to fully leverage LINQ while being ignorant of the underlying storage.
 
 {{{
 
