@@ -34,13 +34,13 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Data" />
     <Reference Include="System.Data.Linq">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ISoftDeleteEntity.cs" />
+    <Compile Include="ISoftDeleteTable`1.cs" />
     <Compile Include="ITable`1.cs" />
     <Compile Include="IUnitOfWork.cs" />
     <Compile Include="L2S\L2SSoftDeleteTable`1.cs" />

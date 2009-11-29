@@ -10,8 +10,9 @@ namespace IgnorantPersistence.L2S
 	/// </summary>
 	/// <typeparam name="T">must implement ISoftDeleteEntity</typeparam>
 	internal class L2SSoftDeleteTable<T> :
-		L2STable<T>
-		where T : class//, ISoftDeleteEntity
+		L2STable<T>,
+		ISoftDeleteTable<T>
+		where T : class
 	{
 		#region Init
 
@@ -88,5 +89,25 @@ namespace IgnorantPersistence.L2S
 		}
 
 		#endregion L2STable<T, TKey> Methods
+
+		#region ISoftDeleteTable<T> Members
+
+		IQueryable<T> ISoftDeleteTable<T>.AllItems
+		{
+			get { return base.GetQueryable(this.Items); }
+		}
+
+		IQueryable<T> ISoftDeleteTable<T>.Deleted
+		{
+			get
+			{
+				return
+					from ISoftDeleteEntity n in base.GetQueryable(this.Items)
+					where n.DeletedDate.HasValue
+					select (T)n;
+			}
+		}
+
+		#endregion ISoftDeleteTable<T> Members
 	}
 }
