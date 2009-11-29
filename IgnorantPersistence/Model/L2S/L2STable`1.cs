@@ -12,7 +12,8 @@ namespace IgnorantPersistence.L2S
 	/// </summary>
 	/// <typeparam name="T"></typeparam>
 	internal class L2STable<T> :
-		ITable<T> where T:class
+		ITable<T>
+		where T:class
 	{
 		#region Fields
 
