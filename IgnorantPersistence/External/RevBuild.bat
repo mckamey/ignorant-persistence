@@ -9,7 +9,7 @@ IF NOT EXIST %AutoVer% (
 	GOTO :Done
 )
 
-%AutoVer% "%SolnDir%Model\Properties\AssemblyVersion.cs" %BaseVersion%
+%AutoVer% "%SolnDir%IgnorantPersistence\Properties\AssemblyVersion.cs" %BaseVersion%
 %AutoVer% "%SolnDir%IgnorantPersistence.L2S\Properties\AssemblyVersion.cs" %BaseVersion%
 
 :Done
