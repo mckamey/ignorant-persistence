@@ -42,7 +42,7 @@
     <Compile Include="Properties\AssemblyVersion.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Model\IgnorantPersistence.csproj">
+    <ProjectReference Include="..\IgnorantPersistence\IgnorantPersistence.csproj">
       <Project>{889B2373-7928-431C-AA55-DCCD05A5E0AF}</Project>
       <Name>IgnorantPersistence</Name>
     </ProjectReference>
