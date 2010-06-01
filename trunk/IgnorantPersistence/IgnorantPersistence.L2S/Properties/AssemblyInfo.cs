@@ -2,9 +2,9 @@
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
-[assembly: AssemblyTitle("IgnorantPersistence")]
+[assembly: AssemblyTitle("IgnorantPersistence.L2S")]
 [assembly: AssemblyDescription("Library for implementing persistence ignorance")]
-[assembly: AssemblyProduct("IgnorantPersistence")]
+[assembly: AssemblyProduct("IgnorantPersistence Linq-to-Sql")]
 [assembly: AssemblyCopyright("Copyright ©2009-2010. All rights reserved.")]
 
 #if DEBUG
@@ -14,4 +14,4 @@ using System.Runtime.InteropServices;
 #endif
 
 [assembly: ComVisible(false)]
-[assembly: Guid("786d5d05-b309-4c54-a817-00e03cfd922d")]
+[assembly: Guid("57B47243-C843-43E3-9BD1-52ECE2934D7C")]
