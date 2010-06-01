@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IgnorantPersistence", "IgnorantPersistence\IgnorantPersistence.csproj", "{889B2373-7928-431C-AA55-DCCD05A5E0AF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IgnorantPersistence.L2S", "IgnorantPersistence.L2S\IgnorantPersistence.L2S.csproj", "{E01FA283-DCEA-45E9-9AE2-ECA6A06CACCE}"
