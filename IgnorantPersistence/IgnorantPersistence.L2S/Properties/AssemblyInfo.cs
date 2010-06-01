@@ -3,8 +3,8 @@ using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 [assembly: AssemblyTitle("IgnorantPersistence.L2S")]
-[assembly: AssemblyDescription("Library for implementing persistence ignorance")]
-[assembly: AssemblyProduct("IgnorantPersistence Linq-to-Sql")]
+[assembly: AssemblyDescription("Library for implementing persistence ignorance using Linq-to-Sql")]
+[assembly: AssemblyProduct("IgnorantPersistence")]
 [assembly: AssemblyCopyright("Copyright ©2009-2010. All rights reserved.")]
 
 #if DEBUG
